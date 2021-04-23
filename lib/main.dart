@@ -1,106 +1,68 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:project_app/bottom_button.dart';
 
 void main() {
-
-
-  runApp(MaterialApp(
-
-    home: Scaffold(
-      backgroundColor: Colors.grey[300],
-      appBar: AppBar(
-        backgroundColor: Colors.lightGreenAccent,
-        toolbarHeight: 75,
-        title: Text('Pharmacy App', style: TextStyle(color: Colors.black),),
-        centerTitle: true,
-
-      ),
-
-      body:
-      Column(
-        children: <Widget>[
-         Expanded(
-              child: Container(
-
-                color: Colors.white,
-
-
-                 child:TextField(
-                   decoration: InputDecoration(
-                       hintText: "Data",
-                     labelText: 'Enter the data',
-
-                     labelStyle: TextStyle(
-
-                       fontSize: 30,
-                       color: Colors.black,
-                     ),
-
-
-
-                   ),
-
-                 ),
-
-
-
-              ),
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.grey[300],
+        appBar: AppBar(
+          backgroundColor: Colors.lightGreenAccent,
+          //toolbarHeight: 75,
+          title: Text(
+            'Pharmacy App',
+            style: TextStyle(color: Colors.black),
           ),
-
-
-
-          Expanded(
+          centerTitle: true,
+        ),
+        body: Column(
+          children: <Widget>[
+            Expanded(
               child: Container(
-
-                color: Colors.lightGreenAccent,
-
-                child:TextField(
-
+                color: Colors.white,
+                child: TextField(
                   decoration: InputDecoration(
                     hintText: "Data",
-                    labelText: 'Retrieve the data',
-                    // suffixIcon: IconButton(
-                    //   icon: Icon(Icons.send),
-                    //   onPressed (){},
-                    // ),
+                    labelText: 'Enter the data',
                     labelStyle: TextStyle(
-
                       fontSize: 30,
                       color: Colors.black,
                     ),
                   ),
                 ),
-              ))
-        ],
-
+              ),
+            ),
+            Expanded(
+                child: Container(
+              color: Colors.lightGreenAccent,
+              child: BottomButton(
+                onTap: () {
+                  //add the action you want to perform.
+                },
+                text: ("Retrieve the data"),
+              ),
+              // child: TextField(
+              //   decoration: InputDecoration(
+              //     hintText: "Data",
+              //     labelText: 'Retrieve the data',
+              //     // suffixIcon: IconButton(
+              //     //   icon: Icon(Icons.send),
+              //     //   onPressed (){},
+              //     // ),
+              //     labelStyle: TextStyle(
+              //       fontSize: 30,
+              //       color: Colors.black,
+              //     ),
+              //   ),
+              // ),
+            ))
+          ],
+        ),
       ),
     ),
-
-
-
-  ),
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*class MyApp extends StatelessWidget {
   // This widget is the root of your application.
