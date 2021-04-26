@@ -17,7 +17,7 @@ class BottomButton extends StatelessWidget {
             fontSize: 30,
             color: Colors.black,
           ),
-          textAlign: TextAlign.center,
+          //textAlign: TextAlign.center,
         ));
   }
 }

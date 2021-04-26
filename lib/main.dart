@@ -36,27 +36,34 @@ void main() {
             Expanded(
                 child: Container(
               color: Colors.lightGreenAccent,
-              child: BottomButton(
-                onTap: () {
+              //child: BottomButton(
+                //onTap: () {
+
                   //add the action you want to perform.
-                },
-                text: ("Retrieve the data"),
-              ),
-              // child: TextField(
-              //   decoration: InputDecoration(
-              //     hintText: "Data",
-              //     labelText: 'Retrieve the data',
+                //},
+                //text: ("Retrieve the data"),
+              //)
+
+              child: TextField(
+               decoration: InputDecoration(
+                   hintText: "Data",
+                   labelText: 'Retrieve the data',
               //     // suffixIcon: IconButton(
               //     //   icon: Icon(Icons.send),
               //     //   onPressed (){},
               //     // ),
-              //     labelStyle: TextStyle(
-              //       fontSize: 30,
-              //       color: Colors.black,
-              //     ),
-              //   ),
-              // ),
-            ))
+                   labelStyle: TextStyle(
+                     fontSize: 30,
+                     color: Colors.black,
+                  // ),
+                 ),
+               ),
+            ),
+
+
+                ),
+            ),
+
           ],
         ),
       ),
